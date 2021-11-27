@@ -16,6 +16,16 @@ const giveResults = function(result){
 
 
 
+let firstName = document.querySelector("#first-name");
+let lastName = document.querySelector("#last-name");
+let age  = document.querySelector("#age");
+let weight = document.querySelector("#weight");
+let height = document.querySelector("#height");
+let result = document.querySelector("#result");
 
 
-console.log(giveResults(bmi(60,1.7)))
+const getResult = ()=>{
+    document.querySelector("#result").innerHTML = `Hi ${firstName.value} you have a BMI of ${bmi(weight.value,height.value)} this means that you are ${giveResults(bmi(weight.value,height.value))}`
+}
+
+document.querySelector("#button").addEventListener("click",()=>getResult())

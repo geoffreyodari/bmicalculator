@@ -1,0 +1,27 @@
+.bmi{
+    width:40%;
+    margin:auto;
+    padding:10px;
+    font-size: x-large;
+    background: orange;
+
+}
+
+.user-input{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px;
+
+}
+
+.user-input label{
+    display: inline-block;  
+}
+
+
+.bmi button{
+    width:100%;
+    font-size: x-large;
+    background: red;
+
+}
